@@ -3,6 +3,6 @@ version: 0.2
 phases:
   build:
     commands:
-      - ./scripts/deploy.sh
+      - ./deploy.sh
 artifacts:
   files: appspec.yml
