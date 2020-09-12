@@ -21,7 +21,7 @@ aws lambda update-function-code \
 LATEST_VERSION=$(cat output.json | jq -r '.Version')
 
 # NO DEPLOYMENT NEEDED EXIT
-if [[ $DEVELOPMENT_ALIAS_VERSION -ge $LATEST_VERSION ]]; then
+if [ $DEVELOPMENT_ALIAS_VERSION -ge $LATEST_VERSION ]; then
   exit 0
 fi
 
