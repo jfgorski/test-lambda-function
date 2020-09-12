@@ -37,7 +37,7 @@ Resources:
         CurrentVersion: "$DEVELOPMENT_ALIAS_VERSION"
         TargetVersion: "$LATEST_VERSION"
 EOM
-aws s3 cp \
+aws s3 cp --sse aws:kms \
     $DEPLOY_APPSPEC_FILE \
     s3://$DEPLOY_BUCKET_NAME/$DEPLOY_APPSPEC_FILE
 
