@@ -4,5 +4,3 @@ phases:
   build:
     commands:
       - ./deploy.sh
-artifacts:
-  files: appspec.yml
