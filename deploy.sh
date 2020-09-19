@@ -7,7 +7,7 @@ aws lambda get-alias \
   > output.json
 DEVELOPMENT_ALIAS_VERSION=$(cat output.json | jq -r '.FunctionVersion')
 
-echo =====1
+echo =====2
 env
 echo =====
 
