@@ -4,7 +4,7 @@ exports.handler = async function(event, context) {
   console.log("CONTEXT\n"+JSON.stringify(context));
   const response = {
     statusCode: 200,
-    body: `test-lambda-function v2: ${JSON.stringify(event)}`,
+    body: `test-lambda-function v3: ${JSON.stringify(event)}`,
   }
   
   return response;
