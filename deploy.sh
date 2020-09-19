@@ -7,6 +7,8 @@ aws lambda get-alias \
   > output.json
 DEVELOPMENT_ALIAS_VERSION=$(cat output.json | jq -r '.FunctionVersion')
 
+env
+
 # CREATE ZIP FILE
 cd function
 zip ../function.zip *
